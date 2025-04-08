@@ -1,0 +1,32 @@
+# Blender 4.4.0 MTL File: 'Kitchen.blend'
+# www.blender.org
+
+newmtl Material.001
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd 38df1c570dcf87a9dd94e0c6e075497b.jpg
+map_Ns C:/Users/2300892/Downloads/3_23_2025/textures/edcb2f606ca8a6d4b921311cdefee925.jpg
+
+newmtl Material.002
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd 23_03_2025/textures/2bd3e3671b2cbc788054a15e19f1992f.jpg
+map_Ns 23_03_2025/textures/d77857cdf43cd81f85c68ef0fd053eb6.jpg
+
+newmtl Material.003
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd 20_02_2025/textures/35bf3b7214d5551502aa5cbf181d78bc.jpg
+map_Ns 20_02_2025/textures/2b55f75b6d517ccb8c574ae70f0d50bd.jpg
