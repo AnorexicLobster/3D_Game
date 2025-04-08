@@ -537,7 +537,49 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 533119059}
   m_PrefabAsset: {fileID: 0}
---- !u!54 &118070724
+--- !u!65 &118070725
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 118070716}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 8.06996, y: 27.861462, z: 6.4175644}
+  m_Center: {x: 0.010729316, y: 12.306149, z: 0.9488886}
+--- !u!114 &118070726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 118070716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32897920224759846a0b568e52d573e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  character: {fileID: 1094633636}
+  GameOverScreen: {fileID: 6733278075120114629}
+  ExitScene: {fileID: 1201182092}
+  Journal: {fileID: 71522294}
+  JournalTxt: {fileID: 628939024}
+  Timer: {fileID: 179438095}
+  journalOpen: 0
+  checkingEvidence: 0
+  gameOver: 0
+--- !u!54 &118070733
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -561,51 +603,9 @@ Rigidbody:
   m_ImplicitTensor: 1
   m_UseGravity: 1
   m_IsKinematic: 0
-  m_Interpolate: 1
-  m_Constraints: 126
-  m_CollisionDetection: 1
---- !u!65 &118070725
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 118070716}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 8.06996, y: 28.357124, z: 6.4175644}
-  m_Center: {x: 0.010729316, y: 12.058316, z: 0.9488886}
---- !u!114 &118070726
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 118070716}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 32897920224759846a0b568e52d573e7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  character: {fileID: 1094633636}
-  GameOverScreen: {fileID: 6733278075120114629}
-  ExitScene: {fileID: 1201182092}
-  Journal: {fileID: 71522294}
-  JournalTxt: {fileID: 628939024}
-  Timer: {fileID: 179438095}
-  journalOpen: 0
-  checkingEvidence: 0
-  gameOver: 0
+  m_Interpolate: 0
+  m_Constraints: 54
+  m_CollisionDetection: 0
 --- !u!1 &119855461
 GameObject:
   m_ObjectHideFlags: 0
@@ -1345,7 +1345,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: ff77ed77cb94a934b8e439a33ac254d1, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.12
+  m_Volume: 0.31
   m_Pitch: 3
   Loop: 0
   Mute: 0
@@ -2101,12 +2101,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 118070723}
-  distance: 2.3
-  height: 9.08
+  distance: 3.53
+  height: 8.17
   smoothSpeed: 5
   rotationSpeed: 3
-  rotationAmount: 0
-  verticalAngle: 50.2
+  rotationAmount: -2.37
+  verticalAngle: 30.5
 --- !u!1 &345914097
 GameObject:
   m_ObjectHideFlags: 0
@@ -2974,7 +2974,7 @@ PrefabInstance:
     - target: {fileID: 3893294197879345259, guid: 64dce48905ffd9b4293e595fa6941544,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -12.249
+      value: -14.27
       objectReference: {fileID: 0}
     - target: {fileID: 3893294197879345259, guid: 64dce48905ffd9b4293e595fa6941544,
         type: 3}
@@ -3041,6 +3041,11 @@ PrefabInstance:
       propertyPath: RotationSmoothTime
       value: 0.3
       objectReference: {fileID: 0}
+    - target: {fileID: 4416926081852918490, guid: 64dce48905ffd9b4293e595fa6941544,
+        type: 3}
+      propertyPath: FootstepAudioVolume
+      value: 0.47
+      objectReference: {fileID: 0}
     - target: {fileID: 5597113867290821413, guid: 64dce48905ffd9b4293e595fa6941544,
         type: 3}
       propertyPath: m_Mesh
@@ -3092,11 +3097,11 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4416926081852918481, guid: 64dce48905ffd9b4293e595fa6941544,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 118070724}
+      addedObject: {fileID: 118070726}
     - targetCorrespondingSourceObject: {fileID: 4416926081852918481, guid: 64dce48905ffd9b4293e595fa6941544,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 118070726}
+      addedObject: {fileID: 118070733}
   m_SourcePrefab: {fileID: 100100000, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
 --- !u!1 &547042690
 GameObject:
@@ -44772,7 +44777,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 40c53c88e5dfa5d41940514ca151a8ee, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.04
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 1
   Mute: 0
