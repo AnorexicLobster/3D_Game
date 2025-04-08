@@ -11,5 +11,4 @@
  * Finally I used AI to help me identify ways of cleaning up the mesh and to explain these different things to me.
  * That was the extent of the AI use for this project.
  * 
- * TEST
  */
